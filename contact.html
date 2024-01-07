@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Travel Blog - Contact</title>
+</head>
+<body>
+    <header>
+        <h1>Travel Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="popular_destinations.html">Popular Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Your Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+
+                <label for="age">Your Age:</label>
+                <input type="number" id="age" name="age" min="18" max="99" required>
+
+                <label for="experience">Experience Level:</label>
+                <input type="range" id="experience" name="experience" min="1" max="10" step="1" value="5">
+
+                <label for="country">Select Your Country:</label>
+                <select id="country" name="country">
+                    <option value="usa">United States</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+                <label for="interest">Select Your Interest:</label>
+                <input list="interests" id="interest" name="interest" required>
+                <datalist id="interests">
+                    <option value="Travel">
+                    <option value="Adventure">
+                    <option value="Food">
+                    <!-- Add more options as needed -->
+                </datalist>
+
+                   <label>Preferred Contact Method:</label>
+                <div class="radio-container">
+                    <label><input type="radio" name="contact-method" value="email"> Email</label>
+                    <label><input type="radio" name="contact-method" value="phone"> Phone</label>
+                </div>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Travel Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
