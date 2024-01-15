@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,80 @@
     <title>Travel Blog - About</title>
 </head>
 <body>
-    <header>
-        <h1>Travel Blog</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="popular_destinations.html">Popular Destinations</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="main">
+        <header>
+            <div class="logo">
+                <img src="logo.png" width="140px" />
+            </div>
+            <div>
+                <h1>Travel Blog</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="popular_destinations.html">Popular Destinations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div />
+
+        </header>
     <main>
         <section class="about">
-            <!-- About content here -->
+            <h1 class="title">WELCOME HOME, FELLOW TRAVELER!</h1>
+
+            <div class="img_and_txt">
+                <div class="adventurer">
+                    <img src="aventurier.jpg" alt="adventurer">
+                </div>
+                <div class="text">
+                    <p>Hi, I'm Nomadic Matt, the <span class="span_itallic">New York Times </span>best selling author of <span class="span_blue">How to Travel
+                            the World on 50$ a Day </span>, as well as the founder of this website! And I’m here to help
+                        you save money on your next trip. </p>
+                    <p>Have you ever said one of the following:</p>
+                    <p>“How do I find the money to travel? It seems too expensive for me.”
+                        <br>
+                        “Where do I find the best travel deals?”
+                        <br>
+                        “How do I save money on flights, accommodation, and other big expenses?”
+                        <br>
+                        “How do I plan my trip?”
+                        <br>
+                        “How do I stay safe and healthy?”
+                        <br>
+                        “How do I maximize my time?”
+                        <br>
+                        “I want to travel more, but I don’t know the first step.”
+                    </p>
+                </div>
+            </div>
+            <p class="text_behind">You are not alone. Since I started this blog in 2008, I’ve helped tens of millions of people answer those questions and travel more for less with time-tested and proven tips and advice. By using this website, you can spend less time searching the Internet and being overwhelmed with information and more time doing the one thing you want to do: travel.</p>
+
+<div class="about_form">
+    <p><strong>HEY! Want my best tips in one easy place? Enter your email and get these free planning guides and start planning your next trip like a pro!</strong></p>
+<ul>
+    <li>17-Step Planning Checklist</li>
+    <li>61 Travel Tips for Mastering Travel</li>
+    <li>My Suggested Packing List</li>
+    <li>A Guide to Getting Free Flights</li>
+    <li>The Best Travel Companies for Finding Deals</li>
+</ul>
+<form method="post">
+    <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+
+    <input type="email" id="email" name="email" placeholder="Email" required>
+
+    <input class="submit" type="submit" value="Send me tips">
+</div>
+
+
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Travel Blog. All rights reserved.</p>
-    </footer>
+</div>
+<footer class="footer">
+    <p>&copy; 2024 Travel Blog. All rights reserved.</p>
+</footer>
 </body>
+
 </html>

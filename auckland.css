@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    width: 100vw;
     overflow: hidden;   
 }
 
@@ -31,10 +30,11 @@ header {
 .logo {
     width: 0;
     display: flex;
-    align-items: center; /* Assure le centrage vertical */
-    justify-content: center; /* Assure le centrage horizontal */
+    align-items: center;
+    justify-content: center;
     transition: bottom 0.3s ease;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -46,6 +46,7 @@ nav li {
     margin-right: 20px;
     color: white;
 }
+
 nav li a {
     color: white;
 }
@@ -67,50 +68,40 @@ footer {
     align-items: center; /* Assure le centrage vertical */
     justify-content: center; /* Assure le centrage horizontal */
 }
+.athens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.athen{
+    font-family: 'Arial';
+    font-size: 20px;
+    line-height: 1.5;
+    width: 70%;
+    display: flex;
 
-.entry-title {
-    font-family: 'Arial', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.athen img {
+    width: 675px;
+}
+.title{
+    font-family: 'Arial',sans-serif;
     font-size: 2em;
     text-align: center;
     margin: 40;
     padding: 10;
 }
-
-
-.posts {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-}
-
-.post {
-    width: calc(33.33% - 40px); /* 33.33% - deux fois la marge de 20px */
-    margin: 20px;
-    box-sizing: border-box;
-}
-
-.post img {
-    width: 100%;
-    height: auto;
-}
-
-.post h3 {
-    padding: 5px;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-    color: black;
+.span_blue{
+    color: aquamarine;
 }
 
 @media (max-width: 800px) {
-    .post {
-        width: 100%;
-        margin: 60px;
-        margin-top: 0;
+    .athen img {
+        width: 435px;
     }
     .logo
     {

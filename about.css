@@ -2,6 +2,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    overflow: hidden;   
+}
+
+.main {
+    height: 98%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.footer {
+    height: 2%;
 }
 
 header {
@@ -9,6 +21,18 @@ header {
     color: white;
     padding: 1em;
     text-align: center;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: bottom 0.3s ease;
 }
 
 nav ul {
@@ -22,6 +46,7 @@ nav li {
     margin-right: 20px;
     color: white;
 }
+
 nav li a {
     color: white;
 }
@@ -38,5 +63,156 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center; /* Assure le centrage vertical */
+    justify-content: center; /* Assure le centrage horizontal */
 }
+
+.title{
+    font-family: 'Arial',sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin: 40;
+    padding: 10;
+}
+
+.img_and_txt{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.adventurer {
+    display: inline-block;
+}
+.adventurer img{
+    width:500px;
+    height:489px;
+}
+
+.text{
+    font-family: 'Arial';
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 20px; 
+    width: 400px;
+
+}
+.text p{
+    line-height: 1.5;
+    margin-top: 0px;
+}
+
+.text_behind{
+    font-family: 'Arial';
+    font-size: 20px;
+    display: inline-block;
+    line-height: 1.5;
+    margin: 0 0 24px;
+    margin-left: 290px;
+    margin-right: 290px;
+}
+
+.span_itallic{
+font-style: italic;
+}
+.span_blue{
+    color: aquamarine;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.about_form {
+    background: #f9fafb;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-color: #000;
+    border-style: solid;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    font-family: 'Arial';
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 50%;
+    margin: 20px auto;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .about_form p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .submit {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .submit:hover {
+    background-color: #45a049;
+  }
+
+@media (max-width: 1000px) {
+    .logo
+    {
+        visibility: hidden;
+    }
+    .img_and_txt{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text {
+        margin-top: 20px;
+        width: 90%;
+    }
+    .adventurer img{
+        width: 100%;
+    }
+    .text_behind{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .about_form {
+        max-width: 90%;
+    }
+}
+
 

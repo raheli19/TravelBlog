@@ -7,17 +7,25 @@
     <title>Travel Blog - Contact</title>
 </head>
 <body>
-    <header>
-        <h1>Travel Blog</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="popular_destinations.html">Popular Destinations</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="main">
+        <header>
+            <div class="logo">
+                <img src="logo.png" width="140px" />
+            </div>
+            <div>
+                <h1>Travel Blog</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="popular_destinations.html">Popular Destinations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div />
+
+        </header>
     <main>
         <section class="contact-form">
             <h2>Contact Us</h2>
@@ -56,8 +64,8 @@
 
                    <label>Preferred Contact Method:</label>
                 <div class="radio-container">
-                    <label><input type="radio" name="contact-method" value="email"> Email</label>
-                    <label><input type="radio" name="contact-method" value="phone"> Phone</label>
+                    <label><input type="radio" name="contact-method" value="email" class="align-left"> Email</label>
+                    <label><input type="radio" name="contact-method" value="phone" class="align-left"> Phone</label>
                 </div>
                 <label for="message">Your Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
@@ -66,8 +74,10 @@
             </form>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Travel Blog. All rights reserved.</p>
-    </footer>
+</div>
+<footer class="footer">
+    <p>&copy; 2024 Travel Blog. All rights reserved.</p>
+</footer>
 </body>
+
 </html>
