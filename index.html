@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="index.css">
 
     <title>Travel Blog - Home</title>
 
@@ -12,48 +12,27 @@
 
 <body>
     <div class="main">
-        <header>
-            <div class="logo">
-                <img src="logo.png" width="140px"/>
-            </div>
-            <div>
-                  <h1>Travel Blog</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="popular_destinations.html">Popular Destinations</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <!-- Internal HTML Links -->
-                    <li><a href="#recent-posts">Recent Posts</a></li>
-                </ul>
-            </nav>
-            </div>
-            <div/>
-          
-        </header>
+        <embed type="text/html" src="layout/header.html">
         <main>
             <section id="recent-posts" class="recent-posts">
-                <!-- Recent travel posts here -->
-
                 <h1 class="entry-title" itemprop="headline">LATEST BLOG POSTS</h1>
                 <div class="posts">
 
                     <div class="post">
-                        <a href="athens.html">
+                        <a href="pages/athens.html" target="_parent">
                             <img src="https://media.nomadicmatt.com/2023/besthotelsathens.jpg">
                             <h3>The 6 Best Hotels in Athens</h3>
                         </a>
 
                     </div>
                     <div class="post">
-                        <a href="raleigh.html">
+                        <a href="pages/raleigh.html" target="_parent">
                             <img src="https://media.nomadicmatt.com/2024/24hoursraleigh.jpg"></img>
                             <h3>How to Spend 24 Hours in Raleigh, North Carolina</h3>
                         </a>
                     </div>
                     <div class="post">
-                        <a href="auckland.html">
+                        <a href="pages/auckland.html" target="_parent">
                             <img src="https://media.nomadicmatt.com/2023/aucklandhotels1.jpg"></img>
 
                             <h3>The 6 Best Hotels in Auckland</h3>
@@ -105,9 +84,7 @@
             </section>
         </main>
     </div>
-    <footer class="footer">
-        <p>&copy; 2024 Travel Blog. All rights reserved.</p>
-    </footer>
+    <embed type="text/html" src="layout/footer.html" class="footer">
 </body>
 
 </html>

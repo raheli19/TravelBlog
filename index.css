@@ -7,65 +7,28 @@ body {
     overflow: hidden;   
 }
 
+embed {
+    width: 100%;
+}
+
 .main {
     height: 98%;
     overflow: scroll;
     overflow-x: hidden;
 }
 
-.footer {
-    height: 2%;
-}
-
-header {
+embed.footer {
     background-color: black;
-    color: white;
     padding: 1em;
-    text-align: center;
-    height: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.logo {
-    width: 0;
-    display: flex;
-    align-items: center; /* Assure le centrage vertical */
-    justify-content: center; /* Assure le centrage horizontal */
-    transition: bottom 0.3s ease;
-}
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-    display: inline;
-    margin-right: 20px;
-    color: white;
-}
-nav li a {
-    color: white;
+    padding-bottom: 0.5%;
+    position: fixed;
+    bottom: 0;
+    padding-left: 0;
+    height: 25px;
 }
 
 main {
     padding: 20px;
-}
-
-footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 30px;
-    display: flex;
-    align-items: center; /* Assure le centrage vertical */
-    justify-content: center; /* Assure le centrage horizontal */
 }
 
 .entry-title {
@@ -76,7 +39,6 @@ footer {
     padding: 10;
 }
 
-
 .posts {
     width: 100%;
     display: flex;
@@ -86,7 +48,7 @@ footer {
 }
 
 .post {
-    width: calc(33.33% - 40px); /* 33.33% - deux fois la marge de 20px */
+    width: calc(33.33% - 40px); 
     margin: 20px;
     box-sizing: border-box;
 }
@@ -94,11 +56,18 @@ footer {
 .post img {
     width: 100%;
     height: auto;
+    transition: transform 0.3s ease-in;
+}
+.post img:hover {
+    transform: scale(1.03);
+
 }
 
 .post h3 {
     padding: 5px;
+    padding-top: 0;
     box-sizing: border-box;
+    margin-top: 10px;
 }
 
 a {
@@ -110,6 +79,7 @@ a {
     .post {
         width: 100%;
         margin: 60px;
+        margin-bottom: 20px;
         margin-top: 0;
     }
     .logo
