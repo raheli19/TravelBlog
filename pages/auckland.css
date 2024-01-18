@@ -1,39 +1,10 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;   
-}
-
-embed {
-    width: 100%;
-}
-
-.main {
-    height: 98%;
-    overflow: scroll;
-    overflow-x: hidden;
-}
-
-embed.footer {
-    background-color: black;
-    padding: 1em;
-    padding-bottom: 0.5%;
-    position: fixed;
-    bottom: 0;
-    padding-left: 0;
-    height: 25px;
-}
-
-.athens{
+.aucklands{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.athen{
+.auckland{
     font-family: 'Arial';
     font-size: 20px;
     line-height: 1.5;
@@ -44,7 +15,7 @@ embed.footer {
     align-items: center;
     justify-content: center;
 }
-.athen img {
+.auckland img {
     width: 675px;
 }
 .title{
@@ -59,7 +30,10 @@ embed.footer {
 }
 
 @media (max-width: 800px) {
-    .athen img {
-        width: 435px;
+    .auckland img {
+        width: 85vw;
+    }
+    .auckland{
+        width: 90%;
     }
 }
