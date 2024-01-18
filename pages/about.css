@@ -17,6 +17,21 @@ embed {
     overflow-x: hidden;
 }
 
+aside {
+    width: 40%;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+  }
+  
+  aside > p {
+    margin: 0.5rem;
+  }
+  
+
 embed.footer {
     background-color: black;
     padding: 1em;
@@ -71,7 +86,7 @@ main {
     font-size: 20px;
     display: inline-block;
     line-height: 1.5;
-    margin: 0 0 24px;
+    margin: 15px 0 24px;
     margin-left: 290px;
     margin-right: 290px;
 }
@@ -83,6 +98,16 @@ font-style: italic;
     color: aquamarine;
     font-style: italic;
     font-weight: bold;
+}
+
+.map {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    width: 65%;
 }
 
 .about_form {
@@ -170,6 +195,9 @@ font-style: italic;
     }
     .about_form {
         max-width: 90%;
+    }
+    iframe {
+        width: 90%;
     }
 }
 

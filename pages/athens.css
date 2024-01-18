@@ -51,6 +51,9 @@ main {
 .athen img {
     width: 675px;
 }
+.athen video {
+    width: 675px;
+}
 .title{
     font-family: 'Arial',sans-serif;
     font-size: 2em;
@@ -64,6 +67,9 @@ main {
 
 @media (max-width: 800px) {
     .athen img {
-        width: 435px;
+        width: 90%;
+    }
+    .athen video {
+        width: 90%;
     }
 }
